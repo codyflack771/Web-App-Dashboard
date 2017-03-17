@@ -1,0 +1,254 @@
+/************************************
+	Header
+************************************/
+.header {
+	height: 50px;
+	background-color: #7477BF;
+	color: #fff;
+	z-index: 1;
+}
+
+.header h1 {
+	margin: 12.5px 0 0 15px;
+	padding: 0;
+	float: left;
+	font-size: 22px;
+	font-weight: lighter;
+}
+
+.header p {
+	float: right;
+	font-size: 16px;
+	margin: 16px 15px 16px 10px;
+}
+
+#profile {
+	float: right;
+	margin: 12.5px 0 0 10px;
+}
+
+#profile img {
+	border-radius: 50%;
+}
+
+#notifications {
+	float: right;
+	margin: 15px 10px 0 0;
+}
+
+#headerPlaceholder {
+	height: 35px;
+	margin: 7.5px 0 7.5px 0;
+	border-right: 1px solid #5D61BF;
+	float: right;
+}
+
+/************************************
+	Sidebar
+************************************/
+.sidebar {
+	width: 70px;
+	padding-top: 50px;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	bottom: 0;
+	background-color: #4D4C72;
+	z-index: -1;
+}
+
+.sidebar svg {
+	margin: 25px 0 0 20px;
+	height: 30px;
+	width: 30px;
+}
+
+.sidebar .st0 {
+	fill: #8D8CA5;
+}
+
+.sidebar svg .active {
+	fill: #fff;
+}
+
+/************************************
+	Main Content
+************************************/
+.content {
+	margin: 0 0 0 70px;
+}
+
+.dashboard {
+	width: 20%;
+	height: 50px;
+	float: left;
+	margin: 12.5px 0 0 0;
+}
+
+.dashboard p {
+	margin: 0;
+	font-size: 22px;
+	text-align: center;
+	color: #878686;
+}
+
+.search {
+	float: right;
+	width: 79%;
+	background-color: #FBFBFB;
+	height: 50px;
+	border-left: 1px solid #E1E1E1;
+	border-bottom: 1px solid #E1E1E1;
+}
+
+.search form {
+	float: right;
+	margin: 11px 30px 0 0;
+}
+
+.search form input {
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+	padding: 5px;
+	font-size: 14px;
+	width: 250px;
+}
+
+.alert {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #7377BF;
+	clear: both;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.alert div {
+	padding: 8px;
+}
+
+.alert b {
+	margin: 0 10px 0 10px;
+	font-size: 16px;
+}
+
+.alert p {
+	display: inline;
+	font-size: 16px;
+}
+
+.alert .exit {
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+/************************************
+	Web Traffic Chart
+************************************/
+.webTraffic {
+	width: 90%;
+	height: 300px;
+	margin: 30px auto auto auto;
+}
+.webTraffic div {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+#webTraffic {
+	width: 100%;
+}
+
+/************************************
+	Daily Traffic & Mobile Users
+************************************/
+.graphContainer {
+	width: 100%;
+	border-top: 1px solid rgba(0, 0, 0, 0.6);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.dailyTraffic {
+	width: 50%;
+	height: 300px;
+	border-right: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.dailyTraffic div {
+	width: 80%;
+	margin: auto;
+}
+
+.mobileUsers {
+	width: 50%;
+}
+
+#dailyTraffic {
+	height: 250px;
+	width: 300px;
+	margin: 25px auto 0 auto;
+}
+
+#mobileUsers {
+	height: 250px;
+	margin: 25px auto 0 auto;
+}
+
+/************************************
+	Social Stats
+************************************/
+#socialheader {
+	color: #7477BF;
+	width: 90%;
+	margin: 30px auto;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	color: #7477BF;
+	width: 90%;
+	margin: auto;
+}
+
+.social div {
+	border: 1px solid #D6D6D6;
+	border-radius: 5px;
+	width: 30%;
+	padding: 10px;
+	background-color: #FBFBFB;
+}
+
+.social span {
+	float: left;
+	width: 60%;
+}
+
+.social img {
+	float: left;
+	width: 33%;
+	margin-right: 6%;
+}
+
+.social h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+.social h3 {
+	font-size: 16px;
+}
+
+.social p {
+	font-size: 28px;
+}
