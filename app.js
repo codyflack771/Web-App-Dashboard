@@ -2,6 +2,7 @@ $(document).ready(function() {
 	$(".alertPlaceholder").append("<div class='alert'><div><b>Alert</b><p>Nulla tempor quis ipsum id dapibus. Vivamus laoreet est vel turpis gravida bibendum vel ut nisi.</p><a class='exit'>X</a></div></div>");
 	$(".exit").click(function() {
 		$(".alertPlaceholder").empty();
+		$(".webTraffic").css('height', '375px');
 	})
 });
 
@@ -50,7 +51,6 @@ var dailyTrafficChart = new Chart(ctx, {
 		}]
 	},
 	options: {
-			responsive: true,
 			maintainAspectRatio: false,
 			legend: {
 				display: false
@@ -85,5 +85,17 @@ var mobileUsers = new Chart(ctx, {
 			display: true,
 			text: 'Mobile Users'
 		}
+	}
+});
+
+// Message & Settings
+$('.messageUser button').click(function() {
+	event.preventDefault();
+	if (($('.messageUser input').val()) === "") {
+		alert('Please select a user.');
+	} else if (($('.messageUser textarea').val()) === "") {
+		alert('Please type in a message.')
+	} else {
+		alert('Message Sent!');
 	}
 })
